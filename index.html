@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decorative To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h1>My Decorative To-Do List</h1>
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Enter your task">
+      <input type="date" id="dateInput">
+      <select id="categorySelect">
+        <option value="College">College</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+      </select>
+      <select id="prioritySelect">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+    <div class="filter-area">
+      <div class="dropdown">
+        <button class="dropbtn">Filter Tasks</button>
+        <div class="dropdown-content">
+          <button id="filterAll">All</button>
+          <button id="filterCompleted">Completed</button>
+          <button id="filterPending">Pending</button>
+        </div>
+      </div>
+    </div>
+    <div class="search-area">
+      <input type="text" id="searchInput" placeholder="Search tasks...">
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* Center the content on the screen */
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.todo-container {
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 450px;
+  text-align: center;
+}
+
+h1 {
+  color: #6b7280; /* Subtle pastel grey for title */
+  margin-bottom: 20px;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.input-area input,
+.input-area select,
+.input-area button {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-area input:focus,
+.input-area select:focus {
+  border-color: #a3d8f4; /* Soft pastel blue border on focus */
+  box-shadow: 0 0 5px #a3d8f4;
+}
+
+#addTaskBtn {
+  background: #ffc1cc; /* Soft pastel pink */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#addTaskBtn:hover {
+  background: #ff9aa2; /* Slightly darker pastel pink */
+}
+
+.filter-area {
+  margin-bottom: 15px;
+}
+
+.dropbtn {
+  background-color: #a3d8f4; /* Pastel blue */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.dropbtn:hover {
+  background-color: #90caf9; /* Slightly brighter pastel blue */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fafafa; /* Soft white for dropdown */
+  min-width: 120px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  background: none;
+  color: #6b7280; /* Subtle grey text */
+  padding: 8px 10px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropdown-content button:hover {
+  background-color: #e3f2fd; /* Light pastel blue on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ul#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+ul#taskList li {
+  background: #f8f9fa; /* Subtle pastel grey */
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul#taskList li.completed {
+  text-decoration: line-through;
+  background: #d7fbe8; /* Pastel green for completed tasks */
+}
+
+.search-area input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-area input:focus {
+  border-color: #ffc1cc; /* Soft pastel pink border on focus */
+  box-shadow: 0 0 5px #ffc1cc;
+}
